@@ -3,7 +3,7 @@
 Plugin Name: Allow Visitor Viewing
 Description: Activate this add-on to allow your visitors to view the results of voting, but not vote till they login.
 Plugin URI: http://premium.wpmudev.org/project/post-voting-plugin
-Version: 1.0
+Version: 1.0.0
 Author: Jude Rosario (Incsub)
 */
 
