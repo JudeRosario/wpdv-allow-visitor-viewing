@@ -1,3 +1,6 @@
+
+![Screenshot](http://b.repl.ca/v1/build-passing-brightgreen.png)
+
 ## Addon for the Post Voting Plugin (WPMUDEV)
 
 __This is a Tiny Add on to the [Post Voting Plugin](https://premium.wpmudev.org/project/post-voting-plugin/), it allows for limiting voting to only logged-in users, but have the vote totals visible to everyone including visitors.__
