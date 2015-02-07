@@ -1,7 +1,7 @@
 
 ![Screenshot](http://b.repl.ca/v1/build-passing-brightgreen.png)
 
-<a href="#" src="https://img.shields.io/badge/plugin-WPMUDEV-blue.svg"></a>
+<img src="https://img.shields.io/badge/plugin-WPMUDEV-blue.svg"/>
 
 ## Addon for the Post Voting Plugin (WPMUDEV)
 
