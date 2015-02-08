@@ -128,7 +128,13 @@ class Wdpv_Allow_Visitor_Viewing {
 	}
 
 }
+// Check if the base plugin is installed before activating the addon 
+add_action('plugins_loaded', 'init_wpdv_avv') ;
 
+	function init_wpdv_avv () {
+		if (class_exists('Wdpv_Codec'))
+			Wdpv_Allow_Visitor_Viewing::serve();
+	}
 // Start the addon
-Wdpv_Allow_Visitor_Viewing::serve();
+
 ?>
