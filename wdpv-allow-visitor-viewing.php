@@ -20,8 +20,8 @@ class Wdpv_Allow_Visitor_Viewing {
 
 // The starting point to this addon/class
 	public static function serve () {
-		$me = new self;
-		$me->add_hooks();
+		$instance = new self;
+		$instance->add_hooks();
 	}
 // Hooks into the_content currently for lack of a better hook
 	private function add_hooks () {
@@ -64,21 +64,21 @@ class Wdpv_Allow_Visitor_Viewing {
 		apply_filters('wdpv-output-before_vote_widget', '', $args, $blog_id, $post_id);
 
 // The vote up key/button/star etc .. 
-		$up = "<div class='wdpv_vote_up {$skin}'><input type='hidden' value='{$post_id}' />";
-		$up .= "<input type='hidden' class='wdpv_blog_id' value='{$blog_id}' /></div>";
-		$up = apply_filters('wdpv-output-vote_up', $up, $args, $blog_id, $post_id);
+		$up_vote = "<div class='wdpv_vote_up {$skin}'><input type='hidden' value='{$post_id}' />";
+		$up_vote .= "<input type='hidden' class='wdpv_blog_id' value='{$blog_id}' /></div>";
+		$up_vote = apply_filters('wdpv-output-vote_up', $up_vote, $args, $blog_id, $post_id);
 // The vote count / result wrapped with a hidden input tag		
 		$result = "<div class='wdpv_vote_result'><span class='wdpv_vote_result_output'>{$count}</span>";
 		$result .= "<input type='hidden' value='{$post_id}' />";
 		$result .= "<input type='hidden' class='wdpv_blog_id' value='{$blog_id}' /></div>";
 		$result = apply_filters('wdpv-output-vote_result', $result, $args, $blog_id, $post_id);
 // The vote down key/button/star etc .. 		
-		$down = "<div class='wdpv_vote_down {$skin}'><input type='hidden' value='{$post_id}' />";
-		$down .= "<input type='hidden' class='wdpv_blog_id' value='{$blog_id}' /></div>";
-		$down = apply_filters('wdpv-output-vote_down', $down, $args, $blog_id, $post_id);
+		$down_vote = "<div class='wdpv_vote_down {$skin}'><input type='hidden' value='{$post_id}' />";
+		$down_vote .= "<input type='hidden' class='wdpv_blog_id' value='{$blog_id}' /></div>";
+		$down_vote = apply_filters('wdpv-output-vote_down', $down_vote, $args, $blog_id, $post_id);
 				
 // The return string constructed from the above 3 variables
-		$ret = "<div class='wdpv_voting'>".$up.$result.$down."</div>";
+		$ret = "<div class='wdpv_voting'>".$up_vote.$result.$down_vote."</div>";
 		$ret .= $standalone ? '<div class="wdpv_clear"></div>' : '';
 
 // Sets the icons as disabled
