@@ -135,6 +135,3 @@ add_action('plugins_loaded', 'init_wpdv_avv') ;
 		if (class_exists('Wdpv_Codec'))
 			Wdpv_Allow_Visitor_Viewing::serve();
 	}
-// Start the addon
-
-?>
