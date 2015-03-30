@@ -1,6 +1,7 @@
 ## Addon for the Post Voting Plugin (WPMUDEV)
 
-![Screenshot](https://img.shields.io/badge/build-passed-1ece30.svg) ![Screenshot](https://img.shields.io/badge/plugin-WPMUDEV-blue.svg) ![Screenshot](https://img.shields.io/badge/license-GNU_GPL_v2-red.svg) ![Screenshot](https://img.shields.io/badge/release-1.0.0-orange.svg)
+[![Screenshot](https://img.shields.io/badge/plugin-WPMUDEV-blue.svg)](https://premium.wpmudev.org/projects)[![Screenshot](https://img.shields.io/badge/license-GNU_GPL_v2-red.svg)](https://www.gnu.org/licenses/gpl-2.0.html)[![Build Passed](https://img.shields.io/badge/build-passed-1ece30.svg)](#)[![Release] (https://img.shields.io/badge/release-1.0.0-orange.svg)](#)[![Code Climate](https://codeclimate.com/github/JudeRosario/wpdv-allow-visitor-viewing/badges/gpa.svg)](https://codeclimate.com/github/JudeRosario/wpdv-allow-visitor-viewing)
+
 
 __This is a Tiny Add on to the [Post Voting Plugin](https://premium.wpmudev.org/project/post-voting-plugin/), it allows for limiting voting to only logged-in users, but have the vote totals visible to everyone including visitors.__
 
